@@ -13,14 +13,14 @@ import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import com.devsuperior.dslearnbds.entities.pk.EnrollmentPK;
+import com.devsuperior.dslearnbds.entities.pk.EnrollmentPk;
 
 @Entity
 @Table(name = "tb_enrollment")
 public class Enrollment {
 
 	@EmbeddedId
-	private EnrollmentPK id = new EnrollmentPK();
+	private EnrollmentPk id = new EnrollmentPk();
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant enrollMoment;
